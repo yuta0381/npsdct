@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Nether Portal Shortest Distance Calculation Tool</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="title">
+    <h2>Nether Portal Shortest Distance Calculation Tool</h2>
+    <p>ネザーゲート最短距離計算ツール</p>
+  </div>
+  <main>
+    <div id="info">
+      <img src="NetherPortal.png" id="portal"><img src="NetherPortal.png" id="portal">
+      <img src="Steve.png" id="player">
+    </div>
+    <form method="post">
+      <p id="portal0"><label for="xyz0">ゲート1の片端の座標: </label><input type="text" id="xyz0" placeholder="x座標" pattern="^-?[0-9]+$" required><input type="text" id="xyz0" placeholder="y座標" pattern="^[1-9]\d*$" required><input type="text" id="xyz0" placeholder="z座標" pattern="^-?[0-9]+$" required></p>
+      <p id="portal1"><label for="xyz1">もう片端の座標: </label><input type="text" id="xyz1" placeholder="x座標" pattern="^-?[0-9]+$" required><input type="text" id="xyz1" placeholder="y座標" disabled><input type="text" id="xyz1" placeholder="z座標" pattern="^-?[0-9]+$" required></p>
+      <p id="portal2"><label for="xyz2">ゲート2の片端の座標: </label><input type="text" id="xyz2" placeholder="x座標" pattern="^-?[0-9]+$" required><input type="text" id="xyz2" placeholder="y座標" pattern="^[1-9]\d*$" required><input type="text" id="xyz2" placeholder="z座標" pattern="^-?[0-9]+$" required></p>
+      <p id="portal3"><label for="xyz3">もう片端の座標: </label><input type="text" id="xyz3" placeholder="x座標" pattern="^-?[0-9]+$" required><input type="text" id="xyz3" placeholder="y座標" disabled><input type="text" id="xyz3" placeholder="z座標" pattern="^-?[0-9]+$" required></p>
+      <div id="err"></div>
+      <button type="submit" name="submit">計算</button>
+    </form>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
